@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <title>Time</title> 
+  <script>
+   const prettyTime = (seconds) => {
+   if(seconds>3600){
+	alert("more than a hour");
+	return;
+	}
+	const minutes = Math.floor(seconds / 60);
+	const secondsOutput = seconds - minutes * 60;
+	const prettify = (num) =>
+		num > 9 ? `${num}` : `0${num}`;
+	return `${prettify(minutes)}:${prettify(secondsOutput)}`;
+	};
+	console.log(prettyTime(322));		
+  </script>
+ </head>
+ <body>
+  <p>Hello world</p>
+ </body>
+</html>
